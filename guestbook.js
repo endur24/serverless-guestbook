@@ -41,6 +41,7 @@ const guestbook = {
     console.log('Loading entries...');
     $('#entries').html('Loading entries...');
     guestbook.get().done(function(result) {
+      console.log(result.entries)
       if (!result.entries) {
         return;
       }
